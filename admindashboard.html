@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admindashboard.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <h2>📚 Admin Dashboard</h2>
+        <button id="logout-btn" class="logout-btn">Logout</button>
+    </div>
+
+    <!-- HERO -->
+    <div class="hero-section">
+        <h1>Welcome Admin 👨‍💼</h1>
+        <p>Manage Library System</p>
+    </div>
+
+    <!-- ADD BOOK -->
+    <div class="books-container">
+
+        <h2 class="genre-heading">➕ Add Book</h2>
+
+        <div class="book-card">
+            <input id="title" placeholder="Title">
+            <input id="author" placeholder="Author">
+            <input id="genre" placeholder="Genre">
+            <input id="quantity" type="number" placeholder="Quantity">
+
+            <button onclick="addBook()">Add Book</button>
+        </div>
+
+        <!-- BOOK LIST -->
+        <h2 class="genre-heading" style="margin-top:40px;">📚 All Books</h2>
+
+        <div id="books-list" class="genre-books"></div>
+    </div>
+
+    <!-- BORROWED BOOKS -->
+
+    <h2 class="genre-heading" style="margin-top:40px;">
+        📖 Borrowed Books
+    </h2>
+
+    <div id="borrowed-books-list" class="genre-books"></div>
+
+    <script src="admindashboard.js"></script>
+
+</body>
+
+</html>

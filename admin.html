@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System - Admin Login</title>
+    <meta name="description" content="Admin portal for managing the library system.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-overlay" style="background: linear-gradient(135deg, rgba(20, 20, 20, 0.8) 0%, rgba(50, 20, 20, 0.8) 50%, rgba(80, 20, 20, 0.8) 100%);"></div>
+    <div class="single-container" id="admin-container">
+        <form action="#" id="admin-form">
+            <h2 style="color: var(--primary-color);">Admin Portal</h2>
+            <p class="subtitle">Secure access for library staff</p>
+            <div class="input-group">
+                <input type="text" id="admin-username" placeholder="Admin Username" required />
+            </div>
+            <div class="input-group">
+                <input type="password" id="admin-password" placeholder="Password" required />
+            </div>
+            <div class="actions-container">
+                <button type="submit" class="primary-btn" style="background-color: #c0392b; border-color: #c0392b; box-shadow: 0 4px 15px rgba(192, 57, 43, 0.3);">Access Portal</button>
+                <a href="index.html" class="secondary-link">&larr; Back to Student Login</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>
